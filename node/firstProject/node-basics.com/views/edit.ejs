@@ -1,0 +1,28 @@
+<% include ./partials/header %>
+
+<div class= "ui conatiner segment">
+    <div class = "ui large header center aligned">
+        EDIT <%=game.title %>
+    </div>
+    <form action= "/games/<%= game._id %>?_method=PUT" method="POST" class="ui form">
+        <div class="field" id="formField">
+            <label>Game Title</label>
+            <input type="text" name="game[title]" value="<%= game.title %>">
+        </div>
+        <div class="field" id="formField">
+            <label>Image Link</label>
+            <input type="text" name="game[image]" value="<%= game.image %>">
+        </div>
+        <div class="field" id="formField">
+            <label>Description</label>
+            <textarea name="game[content]"> <%= game.content %></textarea>
+        </div>
+        <div class="field" id="formField">
+            <label>Score</label>
+            <input type="number" min="1" max="10" name="game[score]" value= "<%= game.score %>">
+        </div>
+        <button class="ui positive large button" id="formButton" type="submit">Submit</button>
+    </form>
+</div>
+
+<% include ./partials/footer %>

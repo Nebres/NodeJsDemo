@@ -1,0 +1,28 @@
+<% include ./partials/header %>
+
+<div class= "ui conatiner segment">
+    <div class = "ui large header center aligned">
+        POST NEW GAME
+    </div>
+    <form action= "/games" method="POST" class="ui form">
+        <div class="field" id="formField">
+            <label>Game Title</label>
+            <input type="text" name="game[title]" placeholder="Title">
+        </div>
+        <div class="field" id="formField">
+            <label>Image Link</label>
+            <input type="text" name="game[image]" placeholder="Image link">
+        </div>
+        <div class="field" id="formField">
+            <label>Description</label>
+            <textarea name="game[content]"></textarea>
+        </div>
+        <div class="field" id="formField">
+            <label>Score</label>
+            <input type="number" min="1" max="10" name="game[score]" placeholder="Score (1 - 10)">
+        </div>
+        <button class="ui positive large button" id="formButton" type="submit">Submit</button>
+    </form>
+</div>
+
+<% include ./partials/footer %>

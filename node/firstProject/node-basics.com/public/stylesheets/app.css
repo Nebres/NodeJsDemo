@@ -1,0 +1,29 @@
+.content {
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-bottom: 1%
+}
+
+#menu {
+    background-color: #FFFFCC;
+    font-size: 1.5em;
+}
+
+#formField {
+    margin-left: 16em;
+    margin-right: 16em;
+}
+
+#formButton {
+    margin-left: 14em;
+    margin-right: 14em; 
+}
+
+#showMore {
+    margin-right: 25%;
+}
+
+#inlineObject {
+    display: inline-block;
+}
+

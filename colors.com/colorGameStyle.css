@@ -1,0 +1,57 @@
+body{
+	background-color: rgb(230, 230, 230);
+}
+
+h1 {
+	margin-bottom: 8px;
+	margin-top: 8px;
+}
+
+h3 {
+	margin-top: 8px;
+	margin-bottom: 0;
+}
+
+
+.hedder {
+	text-align: center;
+	background-color: rgb(80, 180, 240);
+}
+
+.gameMenu {
+	padding-left: 35%;
+	padding-right: 30%;
+	font-size: 18px;
+	font-weight: bold;
+	background-color: navajowhite;
+}
+
+.container {
+	max-width: 600px;
+	margin: auto auto;
+}
+
+.squares {
+	width: 30%;
+	margin: 1.66%;
+	background-color: purple;
+	padding-bottom: 30%;
+	float: left;
+	border-radius: 25px;
+}
+
+.gameMenuElement {
+	display: table-cell;
+	padding-top: 2px;
+}
+
+#spaceBeetwen {
+	width: 67%;
+	text-align: center;
+	color: green;
+}
+
+#spaceBeetwenLevel {
+	width:3%;
+}
+

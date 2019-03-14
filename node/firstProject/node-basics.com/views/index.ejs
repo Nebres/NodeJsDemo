@@ -1,0 +1,28 @@
+<% include ./partials/header %>
+
+<% games.forEach( (game)=> { %>
+    <div class = "ui conatiner">
+        <div class="ui center aligned secondary grey inverted segment">
+            <div class = "ui large header">
+                <p> <%= game.title %> </p>
+            </div>
+            <div class = "ui medium image">
+                <img src = "<%= game.image %>" >
+            </div>
+            <div class = "ui small header">
+                <span> Post Created: <%= game.created.toDateString() %></span>
+            </div>
+            <div class = "ui small header">
+                <p> Score: <%= game.score %> </p>
+            </div>
+            <div class = "content">
+                <p> <%= game.content %></p>
+            </div>
+            <div class= "ui inverted olive button segment" id= "showMore">
+                <a href= "/games/<%=game._id %>">Show More </a>    
+            </div>
+        </div>
+    </div>
+<% }); %>
+
+<% include ./partials/footer %>
